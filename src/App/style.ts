@@ -21,6 +21,7 @@ export const navigationCSS: CSSProperties = {
 export const contentCSS: CSSProperties = {
   flex: 1,
   padding: "16px",
+  width: "100%",
 }
 
 export const navigationButtonCSS: CSSProperties = {
@@ -30,4 +31,12 @@ export const navigationButtonCSS: CSSProperties = {
   padding: "12px",
   borderRadius: "12px",
   cursor: "pointer",
+}
+
+export const mapContainerCSS: CSSProperties = {
+  width: "100%",
+  height: "100%",
+  backgroundColor: "#AAF",
+  borderRadius: "8px",
+  overflow: "hidden",
 }
