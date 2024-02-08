@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "pnpm build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "cp -a dist public && gh-pages -d public"
   },
   "dependencies": {
     "@fontsource/roboto": "^5.0.8",
