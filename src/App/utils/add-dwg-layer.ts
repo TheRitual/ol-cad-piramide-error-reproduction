@@ -13,7 +13,7 @@ interface AddDWGLayerProps {
 }
 const addDWGLayer = ({ map, metadata, url, originZero }: AddDWGLayerProps) => {
   const { extent, origin, resolutions, tileSize, center } = convertMetadata({ meta: metadata });
-
+  console.log(`zoom: ${map.getView().getZoom()}`)
   const tileGrid = new TileGrid({
     extent: extent,
     origin: originZero ? [0, 0] : origin,
