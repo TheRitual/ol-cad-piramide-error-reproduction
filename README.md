@@ -1,3 +1,9 @@
+Test Dataset:
+- v1 - Custom tileset.
+- v2 - Production tileset (0 <= zoom).
+- v3 - Production tileset (-5 <= zoom <= 5).
+- v4 - Production tileset with shifted +5 zoom levels (0 <= 10).
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
