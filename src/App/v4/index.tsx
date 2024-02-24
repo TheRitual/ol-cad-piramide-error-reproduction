@@ -22,21 +22,6 @@ const SourceV4: FC = () => {
   }, [mapContainerRef.current]);
 
   useEffect(() => {
-    // var resolutions = [
-    //   1.0,
-    //   0.5,
-    //   0.25,
-    //   0.125,
-    //   0.0625,
-    //   0.03125
-    // ]
-    // console.log("v4 resolutions before", resolutions)
-    // var maxResolution = 1
-    // var resolutions2 = []
-    // for (var i = -5; i <= 5; i++) {
-    //   resolutions2.push(maxResolution / Math.pow(2, i));
-    // }
-    // console.log("v4 resolutions after", resolutions2, data)
     if (status === "SUCCESS") {
       data && addDWGLayer({ map: mapRef.current, metadata: data, url: "http://localhost:5173/v4/{z}/{x}/{y}.png", originZero: true })
     }

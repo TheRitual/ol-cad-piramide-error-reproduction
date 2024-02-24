@@ -24,7 +24,6 @@ const configureMap = ({ map, target }: ConfigureMapProps) => {
     projection: "EPSG:2178"
   });
   map.setView(view);
-  map.getView().on("change:resolution", () => { console.log(`zoom: ${map.getView().getZoom()}`) })
 }
 
 export default configureMap;
